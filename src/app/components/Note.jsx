@@ -14,10 +14,10 @@ const Note = () => {
       <p className="italic text-[#919191]">I guess so ?</p>
       <br />
       <p className="text-[#919191]">
-        Anyways check out it's progress and maybe you can learn something from
-        it. It's open source. But it is not top quality code by any standards ,
-        so don't judge me on that. I am using pinterest to host my images , it
-        was quicker. lol <br />
+        Anyways check out it&apos;s progress and maybe you can learn something
+        from it. It&apos;s open source. But it is not top quality code by any
+        standards , so don&apos;t judge me on that. I am using pinterest to host
+        my images , it was quicker. lol <br />
         <br />
         Link to github -
       </p>
