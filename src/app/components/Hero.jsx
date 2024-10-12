@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="border-2 border-[#1c1c1c] bg-[#161616] bg-opacity-50 mt-5 mb-10 max-w-2xl flex justify-center items-center flex-col rounded-xl p-8">
+      <div className="md:border-2 border-[#1c1c1c] md:bg-[#161616] md:bg-opacity-50 mt-5 mb-10 max-w-2xl flex justify-center items-center flex-col rounded-xl md:p-8 p-4">
         <div className="relative w-full ">
           <Image
             src="https://images.unsplash.com/photo-1641186954896-5c1fd64d9b88?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -29,7 +29,7 @@ const Hero = () => {
             height={400}
             className="object-cover w-[100%] h-96 rounded-lg"
           />
-          <h1 className="absolute bottom-6 left-6 font-black drop-shadow-2xl text-3xl ">
+          <h1 className="absolute bottom-6 left-6 font-black drop-shadow-2xl text-5xl ">
             Shivam kumar
           </h1>
         </div>
@@ -124,7 +124,7 @@ const Hero = () => {
             </li>
           </ul>
         </div>
-        <div className="bg-[#161616] border-2 border-[#1c1c1c] text-[#7C7C7C] p-6 w-full rounded-lg mt-10">
+        <div className="md:bg-[#161616] md:border-2 border-[#1c1c1c] text-[#7C7C7C] md:p-6 p-1 w-full rounded-lg mt-10">
           <h2 className="text-xl text-white font-semibold mb-6">
             Work Experience
           </h2>
