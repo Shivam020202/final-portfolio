@@ -4,7 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --font-space-mono: "Space Mono", monospace;
+}
+
+.font-space-mono {
+  font-family: var(--font-space-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,8 +25,27 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.gradient-text {
+  background: linear-gradient(
+    120deg,
+    #8a2be2 20%,
+    #00ff6a 40%,
+    #00c6ff 60%,
+    #ff4ecd 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
