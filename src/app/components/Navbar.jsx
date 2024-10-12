@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="bg-transparent py-4 bg-black ">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-xl font-bold gradient-text ">
-          Shivam's Portfolio
+          Shivam&apos;s Portfolio
         </div>
         <Link href="/contact">
           <div className="text-white flex items-center ">
