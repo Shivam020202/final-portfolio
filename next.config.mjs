@@ -6,6 +6,7 @@ const nextConfig = {
       "img.freepik.com",
       "media.licdn.com",
       "cdn.statically.io",
+      "i.pinimg.com",
     ],
     // Add the domain here
   },
