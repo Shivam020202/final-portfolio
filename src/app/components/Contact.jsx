@@ -107,9 +107,9 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      {status && <p className="mt-4 text-sm text-gray-500">{status}</p>}
+      {status && <p className="mt-4 text-sm text-[#3f3f3f]">{status}</p>}
       <p className="bg-black border-2 border-[#1c1c1c] w-full p-2 rounded-lg mt-4 text-sm text-gray-500 ">
-        Note - Custom Backend Integrated ! Have fun , don't spam
+        Note - Custom Backend Integrated ! Have fun , don&apos;t spam
       </p>
     </div>
   );
