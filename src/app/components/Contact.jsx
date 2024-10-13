@@ -55,6 +55,10 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+      <p className="bg-black border-2 border-[#1c1c1c] w-full p-2 rounded-lg mt-4 text-sm text-gray-500 ">
+        Note - Backend pending , so no real data will be sent . Shoot an email ?
+        @shivam.work222@gmail.com
+      </p>
     </div>
   );
 };
