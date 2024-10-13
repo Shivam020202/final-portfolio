@@ -13,7 +13,7 @@ const Hero = () => {
     {
       role: "Frontend Developer",
       company: "Transmogrify Global",
-      duration: "Jun 2023 - Nov 2024",
+      duration: "Jun 2023 - Nov 2023",
       logo: "https://cdn.statically.io/img/transmogrifyglobal.com/wp-content/uploads/2022/03/TWLD5456.jpg?w=1280&quality=100&f=auto", // Placeholder for company logo
     },
   ];
@@ -180,15 +180,15 @@ const Hero = () => {
                       className="w-10 h-10 rounded-full mr-4 object-cover"
                     />
                     <div>
-                      <h3 className="text-sm font-semibold   text-[#7C7C7C]">
+                      <h3 className="text-sm font-semibold md:text-base text-[#7C7C7C]">
                         {job.role}
                       </h3>
-                      <p className="text-[0.8rem] text-[#434343]">
+                      <p className="text-[0.8rem] md:text-[0.9rem] text-[#434343]">
                         {job.company}
                       </p>
                     </div>
                   </div>
-                  <p className="text-sm text-[#434343]">{job.duration}</p>
+                  <p className="text-sm text-[#434343] ">{job.duration}</p>
                 </div>
               </div>
             ))}

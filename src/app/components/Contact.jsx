@@ -11,28 +11,28 @@ const ContactForm = () => {
             <input
               type="text"
               placeholder="Name"
-              className="w-full transition-all duration-200 bg-gray-800 text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              className="w-full transition-all border-2 border-[#252525] duration-200 bg-[#1C1C1C] text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
             />
           </div>
           <div className="mb-4">
             <input
               type="email"
               placeholder="Email"
-              className="w-full transition-all duration-200 bg-gray-800 text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              className="w-full transition-all  border-2 border-[#252525] duration-200 bg-[#1C1C1C] text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
             />
           </div>
           <div className="mb-4">
             <input
               type="tel"
               placeholder="Phone"
-              className="w-full transition-all duration-200 bg-gray-800 text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              className="w-full transition-all  border-2 border-[#252525] duration-200 bg-[#1C1C1C] text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
             />
           </div>
           <div className="mb-6">
             <textarea
               placeholder="Your sweet message ..."
               rows="4"
-              className="w-full transition-all duration-200 bg-gray-800 text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
+              className="w-full transition-all  border-2 border-[#252525] duration-200 bg-[#1C1C1C] text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
             ></textarea>
           </div>
           <button

@@ -1,6 +1,8 @@
 // app/layout.js or pages/_app.js, depending on your Next.js version
 import { Space_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const spaceMono = Space_Mono({
   subsets: ["latin"],
@@ -16,7 +18,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={spaceMono.variable}>
-      <body className="font-space-mono antialiased">{children}</body>
+      <body className="font-space-mono antialiased mx-auto flex justify-center flex-col items-center ">
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

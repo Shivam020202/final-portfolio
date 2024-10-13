@@ -1,18 +1,19 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
 import Note from "./components/Note";
+import Works from "./components/Works";
 
 export default function Home() {
   return (
     <div className="flex justify-center flex-col max-w-2xl mx-auto">
-      <Navbar />
       <Hero />
       <ContactForm />
       <Resume />
       <Note />
+      <Works />
       {/* <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
