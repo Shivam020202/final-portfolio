@@ -40,7 +40,7 @@ const Hero = () => {
           <hr className="border-[#272727] mb-4" />
           <p className="text-[#7C7C7C] text-base ">This is art , Mr White !</p>
         </div>
-        <div className="border-2 border-[#1c1c1c] mt-10 rounded-xl w-full p-6">
+        <div className="border-2 border-[#1c1c1c] mt-10 rounded-xl w-full py-6 px-3 md:px-6">
           <ul className="flex-row flex justify-between">
             <li className="hover:cursor-pointer transition-all  duration-200 hover:scale-110">
               <Link href="null">
@@ -129,46 +129,8 @@ const Hero = () => {
             Work Experience
           </h2>
           <div className="relative ">
-            {/* Dashed vertical indicator line */}
-            {/* <div
-              className="absolute left-0  top-0 bottom-0 w-0.5"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to bottom, #555555 50%, rgba(85,85,85,0) 0%)",
-                backgroundPosition: "right",
-                backgroundSize: "1px 16px",
-                backgroundRepeat: "repeat-y",
-              }}
-            ></div> */}
-
             {jobs.map((job, index) => (
               <div key={index} className="relative ">
-                {/* Job indicator icon */}
-                {/* <div className="absolute left-0 -ml-14 w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M19 7H5C3.89543 7 3 7.89543 3 9V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V9C21 7.89543 20.1046 7 19 7Z"
-                      stroke="#828282"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M10 12L10.211 12.106C10.7665 12.3838 11.379 12.5284 12 12.5284C12.621 12.5284 13.2335 12.3838 13.789 12.106L14 12M9 6C9 5.46957 9.21071 4.96086 9.58579 4.58579C9.96086 4.21071 10.4696 4 11 4H13C13.5304 4 14.0391 4.21071 14.4142 4.58579C14.7893 4.96086 15 5.46957 15 6V7H9V6Z"
-                      stroke="#828282"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div> */}
-
                 {/* Job card */}
                 <div className="bg-[#1B1B1B] border-2 border-[#252525] mb-4  p-4 rounded-lg ">
                   <div className="flex items-center mb-2 ">

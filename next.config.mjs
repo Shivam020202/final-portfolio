@@ -7,6 +7,7 @@ const nextConfig = {
       "media.licdn.com",
       "cdn.statically.io",
       "i.pinimg.com",
+      "res.cloudinary.com",
     ],
     // Add the domain here
   },
