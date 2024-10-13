@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="md:border-2 border-[#1c1c1c] md:bg-[#161616] md:bg-opacity-50 mt-5 mb-10 max-w-2xl flex justify-center items-center flex-col rounded-xl md:p-8 p-4">
+      <div className="md:border-2 border-[#1c1c1c] md:bg-[#161616] md:bg-opacity-60 mt-5 mb-10 max-w-2xl flex justify-center items-center flex-col rounded-xl md:p-8 p-4">
         <div className="relative w-full ">
           <Image
             src="https://i.pinimg.com/originals/50/62/47/506247ebcde7a1fcdb001109163115f3.jpg"

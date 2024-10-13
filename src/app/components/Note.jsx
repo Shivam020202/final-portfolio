@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Note = () => {
   return (
-    <div className="md:border-2 flex-col border-[#1c1c1c] md:bg-[#161616] md:bg-opacity-50 mt-10 mb-10 max-w-2xl flex  rounded-xl md:p-8 p-4">
+    <div className="md:border-2 flex-col border-[#1c1c1c] md:bg-[#161616] md:bg-opacity-60 mt-10 mb-10 max-w-2xl flex  rounded-xl md:p-8 p-4">
       <p className="font-bold">Note -</p>
       <p className="text-[#919191] pt-2">
         This is a simple portfolio website created using Next.js and Tailwind .
