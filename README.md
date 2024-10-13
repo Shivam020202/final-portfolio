@@ -21,7 +21,7 @@ This portfolio is built using the following technologies:
   - [Nodemailer](https://nodemailer.com/) - To send cool email notifications directly from the contact form. 📧
   - [Vercel](https://vercel.com/) - For effortless deployment and hosting. 🚀
   - [GitHub Actions](https://github.com/features/actions) - For CI/CD workflows. 🤖
-  - [GitHub Actions](https://pinterest.com/) - For adding Images to website without hosting 🤖
+  - [Pinterest Images](https://pinterest.com/) - For adding Images to website without hosting 🤖
 
 
 ## 💡 How I Built It
