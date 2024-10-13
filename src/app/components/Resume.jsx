@@ -9,6 +9,11 @@ const Resume = () => {
     setIsExpanded(!isExpanded);
   };
 
+  const handleDownload = () => {
+    window.location.href =
+      "https://drive.usercontent.google.com/download?id=1ywGWOLWVoSBUAS4jUgMuot36GlhWfTVE&export=download&authuser=0&confirm=t&uuid=c4b97b86-facf-4337-a8b4-48239cec0795&at=AN_67v2mkjwWa8Fi-JQkEWkCgGX-:1728792936980";
+  };
+
   return (
     <div className="m-4 md:m-0">
       <h1 className="italic text-xl mb-4">Resume -</h1>
@@ -33,6 +38,12 @@ const Resume = () => {
         className="mt-4 px-4 py-2 bg-[#252525] border-2 border-[#444] text-white rounded-md hover:bg-[#333] transition-colors duration-200"
       >
         {isExpanded ? "Show Less" : "Show More"}
+      </button>
+      <button
+        onClick={handleDownload}
+        className="mt-4 ml-4 px-4 py-2 bg-[#252525] border-2 border-[#444] text-white rounded-md hover:bg-[#333] transition-colors duration-200"
+      >
+        Download
       </button>
     </div>
   );

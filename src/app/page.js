@@ -8,7 +8,7 @@ import Works from "./components/Works";
 
 export default function Home() {
   return (
-    <div className="flex justify-center flex-col max-w-2xl mx-auto">
+    <div className="flex  justify-center flex-col max-w-2xl mx-auto">
       <Hero />
       <ContactForm />
       <Resume />

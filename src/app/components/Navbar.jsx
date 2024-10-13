@@ -5,9 +5,11 @@ const Navbar = () => {
   return (
     <nav className="bg-transparent py-4 max-w-2xl w-full md:px-0 px-4 bg-black ">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-xl font-bold gradient-text ">
-          Shivam&apos;s Portfolio
-        </div>
+        <Link href="/">
+          <div className="text-white text-xl font-bold gradient-text ">
+            Shivam&apos;s Portfolio
+          </div>
+        </Link>
         <Link href="/contact">
           <div className="text-white flex items-center ">
             <svg

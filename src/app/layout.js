@@ -18,9 +18,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={spaceMono.variable}>
-      <body className="font-space-mono antialiased mx-auto flex justify-center flex-col items-center ">
+      <body className="font-space-mono items-center antialiased flex flex-col min-h-screen">
         <Navbar />
-        <main>{children}</main>
+        <main className="flex-grow w-full mx-auto flex flex-col items-center">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

@@ -7,7 +7,7 @@ const Hero = () => {
     {
       role: "Software Development Engineer",
       company: "BlogHunch Software Pvt. Ltd.",
-      duration: "Dec 2023 - Oct 2024",
+      duration: "Dec 2023 - Nov 2024",
       logo: "https://media.licdn.com/dms/image/v2/D560BAQFRLcYM9BF6Rg/company-logo_200_200/company-logo_200_200/0/1708419759670/bloghunch_logo?e=2147483647&v=beta&t=IFMA35xDbNZsgLitgBFjfMWFBcm54ahLWgARFGmAoHA", // Placeholder for company logo
     },
     {
@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="md:border-2 border-[#1c1c1c] md:bg-[#161616] md:bg-opacity-50 mt-5 mb-10 max-w-2xl flex justify-center items-center flex-col rounded-xl md:p-8 p-4">
         <div className="relative w-full ">
           <Image
-            src="https://images.unsplash.com/photo-1641186954896-5c1fd64d9b88?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://i.pinimg.com/originals/50/62/47/506247ebcde7a1fcdb001109163115f3.jpg"
             alt="hero"
             width={800}
             height={400}
