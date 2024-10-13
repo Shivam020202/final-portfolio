@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   useEffect(() => {
     const whatsappUrl = "https://wa.me/9110068182";
     window.location.href = whatsappUrl;
@@ -14,4 +14,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

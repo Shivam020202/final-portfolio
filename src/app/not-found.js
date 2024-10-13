@@ -9,11 +9,12 @@ export default function Custom404() {
         src="https://i.pinimg.com/564x/4f/b2/93/4fb293669a4d88691f4d265ae55f843c.jpg"
         width="1000"
         height="1000"
+        alt="wolverine chuckling"
         className="w-full rounded-lg object-cover h-auto mt-5"
       />
       <h1 className="text-6xl font-bold mb-4 mt-5 text-red-500">404</h1>
       <p className="text-xl mb-8">
-        Oops! The page you're looking for does not exist.
+        Oops! The page you&apos;re looking for does not exist.
       </p>
       <p className="text-xl mb-8">What else did you expect bub ?</p>
       {/* <p className="text-xl mb-8">What else did you expect bub ?</p> */}
