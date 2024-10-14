@@ -11,7 +11,7 @@ const Resume = () => {
 
   const handleDownload = () => {
     window.location.href =
-      "https://drive.usercontent.google.com/download?id=1ywGWOLWVoSBUAS4jUgMuot36GlhWfTVE&export=download&authuser=0&confirm=t&uuid=c4b97b86-facf-4337-a8b4-48239cec0795&at=AN_67v2mkjwWa8Fi-JQkEWkCgGX-:1728792936980";
+      "https://drive.usercontent.google.com/download?id=1pzYV9ZLq4nAV4ENyig_fyVNpTHhhFuJq&export=download&authuser=0&confirm=t&uuid=9731c413-19e6-4328-a99f-eed25fc92dda&at=AN_67v1j2JenJpj78SUPxSLue4O7:1728893112389";
   };
 
   return (
@@ -23,10 +23,10 @@ const Resume = () => {
         }`}
       >
         <Image
-          src="https://i.pinimg.com/originals/55/58/f7/5558f7213893e51b44ccc138d74bc122.jpg"
+          src="https://res.cloudinary.com/dsgolax64/image/upload/v1728892965/Frontend_dev_1_ck4caj.png"
           alt="hero"
-          width={1000}
-          height={1000}
+          width={2000}
+          height={2000}
           className="object-cover w-full"
         />
         {!isExpanded && (

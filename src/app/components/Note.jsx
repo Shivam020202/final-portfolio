@@ -13,9 +13,9 @@ const Note = () => {
       <br />
       <p className="italic text-[#919191]">I guess so ?</p>
       <br />
-      <p className="text-[#494949] text-base mb-4">
+      {/* <p className="text-[#494949] text-base mb-4">
         the contact form is not working as of now , backend work is pending
-      </p>
+      </p> */}
       <p className="text-[#919191]">
         Anyways check out its progress and maybe you can learn something from
         it. It&apos;s open source. But it is not top quality code by any
