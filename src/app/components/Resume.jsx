@@ -11,7 +11,7 @@ const Resume = () => {
 
   const handleDownload = () => {
     window.location.href =
-      "https://drive.google.com/uc?id=1ywGWOLWVoSBUAS4jUgMuot36GlhWfTVE";
+      "https://drive.google.com/uc?id=1pzYV9ZLq4nAV4ENyig_fyVNpTHhhFuJq";
   };
 
   return (
