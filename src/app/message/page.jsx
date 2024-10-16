@@ -32,6 +32,13 @@ const page = () => {
       <p className="text-[#515151] text-xs pt-2 pb-4 border-b-2 border-[#202020]">
         13-10-2024
       </p>
+      <p className="text-[#919191] pt-4">
+        It is all static anyways , I will be adding the dynamic part soon just
+        so that it feels like a real thing
+      </p>
+      <p className="text-[#515151] text-xs pt-2 pb-4 border-b-2 border-[#202020]">
+        16-10-2024
+      </p>
     </div>
   );
 };

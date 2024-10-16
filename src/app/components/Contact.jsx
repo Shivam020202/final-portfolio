@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -111,6 +112,21 @@ const ContactForm = () => {
       <p className="bg-black border-2 border-[#1c1c1c] w-full p-2 rounded-lg mt-4 text-sm text-gray-500 ">
         Note - Custom Backend Integrated ! don&apos;t spam
       </p>
+      <div className="bg-gradient-to-t from-[#0b1f14] to-[#0c1e00] md:bg-opacity-50  w-full p-4 rounded-lg mt-4 text-sm text-gray-500 ">
+        <h3 className="">Or Contact me at</h3>
+        email -{" "}
+        <Link
+          className="text-yellow-500"
+          href="mailto:shivam.work222@gmail.com"
+        >
+          shivam.work222@gmail.com
+        </Link>
+        <br />
+        phone -{" "}
+        <Link className="text-blue-500" href="tel:+919110068182">
+          +91 9110068182
+        </Link>
+      </div>
     </div>
   );
 };
