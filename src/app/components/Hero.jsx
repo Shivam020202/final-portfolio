@@ -5,6 +5,12 @@ import Link from "next/link";
 const Hero = () => {
   const jobs = [
     {
+      role: "Senior UI/UX Designer & Frontend Developer",
+      company: "Branding Pioneers",
+      duration: "Nov 2024 - Current",
+      logo: "https://brandingpioneers.com/assets/logo.png", // Placeholder for company logo
+    },
+    {
       role: "Software Development Engineer",
       company: "BlogHunch Software Pvt. Ltd.",
       duration: "Dec 2023 - Nov 2024",

@@ -8,6 +8,9 @@ const nextConfig = {
       "cdn.statically.io",
       "i.pinimg.com",
       "res.cloudinary.com",
+      "cdn.brandfetch.io",
+      "brandingpioneers.com",
+      "pin.it",
     ],
     // Add the domain here
   },
