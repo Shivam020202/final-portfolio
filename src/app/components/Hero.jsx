@@ -1,169 +1,108 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const Hero = () => {
-  const jobs = [
-    {
-      role: "Senior UI/UX Designer & Frontend Developer",
-      company: "Branding Pioneers",
-      duration: "Nov 2024 - Current",
-      logo: "https://brandingpioneers.com/assets/logo.png", // Placeholder for company logo
-    },
-    {
-      role: "Software Development Engineer",
-      company: "BlogHunch Software Pvt. Ltd.",
-      duration: "Dec 2023 - Nov 2024",
-      logo: "https://media.licdn.com/dms/image/v2/D560BAQFRLcYM9BF6Rg/company-logo_200_200/company-logo_200_200/0/1708419759670/bloghunch_logo?e=2147483647&v=beta&t=IFMA35xDbNZsgLitgBFjfMWFBcm54ahLWgARFGmAoHA", // Placeholder for company logo
-    },
-    {
-      role: "Frontend Developer",
-      company: "Transmogrify Global",
-      duration: "Jun 2023 - Nov 2023",
-      logo: "https://cdn.statically.io/img/transmogrifyglobal.com/wp-content/uploads/2022/03/TWLD5456.jpg?w=1280&quality=100&f=auto", // Placeholder for company logo
-    },
-  ];
-
   return (
-    <>
-      <div className="md:border-2 border-[#1c1c1c] md:bg-[#161616] md:bg-opacity-60 mt-5 mb-10 max-w-2xl flex justify-center items-center flex-col rounded-xl md:p-8 p-4">
-        <div className="relative w-full ">
-          <Image
-            src="https://i.pinimg.com/originals/50/62/47/506247ebcde7a1fcdb001109163115f3.jpg"
-            alt="hero"
-            width={800}
-            height={400}
-            className="object-cover w-[100%] h-96 rounded-lg"
-          />
-          <h1 className="absolute bottom-6 left-6 font-black drop-shadow-2xl text-5xl ">
-            Shivam kumar
-          </h1>
-        </div>
-        <div className="border-2 border-[#1c1c1c] mt-10 rounded-xl w-full p-6 bg-[#161616] text-white">
-          <h2 className="text-lg font-semibold mb-4">
-            Frontend Developer & UI/UX Designer
-          </h2>
-          <hr className="border-[#272727] mb-4" />
-          <p className="text-[#7C7C7C] text-base ">This is art , Mr White !</p>
-        </div>
-        <div className="border-2 border-[#1c1c1c] mt-10 rounded-xl w-full py-6 px-3 md:px-6">
-          <ul className="flex-row flex justify-between">
-            <li className="hover:cursor-pointer transition-all  duration-200 hover:scale-110">
-              <Link href="null">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"
-                    fill="white"
-                  />
-                </svg>
-              </Link>
-            </li>
-            <li className="hover:cursor-pointer transition-all  duration-200 hover:scale-110">
-              <Link href="https://github.com/Shivam020202">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C1.99917 14.0993 2.65874 16.1458 3.88603 17.849C5.11333 19.5522 6.84598 20.8254 8.83798 21.488C9.33798 21.575 9.52598 21.275 9.52598 21.012C9.52598 20.775 9.51298 19.988 9.51298 19.15C7.00098 19.613 6.35098 18.538 6.15098 17.975C6.03798 17.687 5.55098 16.8 5.12598 16.562C4.77598 16.375 4.27598 15.912 5.11298 15.9C5.90098 15.887 6.46298 16.625 6.65098 16.925C7.55098 18.437 8.98798 18.012 9.56298 17.75C9.65098 17.1 9.91298 16.663 10.201 16.413C7.97598 16.163 5.65098 15.3 5.65098 11.475C5.65098 10.387 6.03798 9.488 6.67598 8.788C6.57598 8.538 6.22598 7.513 6.77598 6.138C6.77598 6.138 7.61298 5.875 9.52598 7.162C10.3401 6.93664 11.1812 6.82327 12.026 6.825C12.876 6.825 13.726 6.937 14.526 7.162C16.439 5.862 17.276 6.138 17.276 6.138C17.826 7.513 17.476 8.538 17.376 8.788C18.013 9.488 18.401 10.375 18.401 11.475C18.401 15.313 16.064 16.163 13.839 16.413C14.201 16.725 14.514 17.325 14.514 18.263C14.514 19.6 14.501 20.675 14.501 21.013C14.501 21.275 14.689 21.587 15.189 21.487C17.1735 20.8161 18.8978 19.5401 20.1195 17.8384C21.3412 16.1367 21.9989 14.0948 22 12C22 6.475 17.525 2 12 2"
-                    fill="white"
-                  />
-                </svg>
-              </Link>
-            </li>
-            <li className="hover:cursor-pointer transition-all  duration-200 hover:scale-110">
-              <Link href="https://www.instagram.com/kashyap_shivam_02/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.028 2C14.153 2.003 14.724 2.009 15.217 2.023L15.411 2.03C15.635 2.038 15.856 2.048 16.123 2.06C17.187 2.11 17.913 2.278 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8307 4.17773 21.2241 4.78247 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.952 8.144 21.962 8.365 21.97 8.59L21.976 8.784C21.991 9.276 21.997 9.847 21.999 10.972L22 11.718V13.028C22.0024 13.7574 21.9947 14.4868 21.977 15.216L21.971 15.41C21.963 15.635 21.953 15.856 21.941 16.122C21.891 17.187 21.721 17.912 21.475 18.55C21.2241 19.2175 20.8307 19.8223 20.322 20.322C19.8222 20.8307 19.2175 21.2242 18.55 21.475C17.913 21.722 17.187 21.89 16.123 21.94L15.411 21.97L15.217 21.976C14.724 21.99 14.153 21.997 13.028 21.999L12.282 22H10.973C10.2432 22.0026 9.51348 21.9949 8.78396 21.977L8.58996 21.971C8.35257 21.962 8.11523 21.9517 7.87796 21.94C6.81396 21.89 6.08796 21.722 5.44996 21.475C4.78279 21.2241 4.1784 20.8306 3.67896 20.322C3.1699 19.8224 2.77607 19.2176 2.52496 18.55C2.27796 17.913 2.10996 17.187 2.05996 16.122L2.02996 15.41L2.02496 15.216C2.00652 14.4868 1.99819 13.7574 1.99996 13.028V10.972C1.99719 10.2426 2.00452 9.5132 2.02196 8.784L2.02896 8.59C2.03696 8.365 2.04696 8.144 2.05896 7.878C2.10896 6.813 2.27696 6.088 2.52396 5.45C2.77565 4.7822 3.17018 4.17744 3.67996 3.678C4.17911 3.16955 4.78315 2.77607 5.44996 2.525C6.08796 2.278 6.81296 2.11 7.87796 2.06C8.14396 2.048 8.36596 2.038 8.58996 2.03L8.78396 2.024C9.51315 2.00623 10.2426 1.99857 10.972 2.001L13.028 2ZM12 7C10.6739 7 9.40211 7.52678 8.46442 8.46447C7.52674 9.40215 6.99996 10.6739 6.99996 12C6.99996 13.3261 7.52674 14.5979 8.46442 15.5355C9.40211 16.4732 10.6739 17 12 17C13.326 17 14.5978 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5978 7.52678 13.326 7 12 7ZM12 9C12.3939 8.99993 12.784 9.07747 13.148 9.22817C13.512 9.37887 13.8428 9.5998 14.1214 9.87833C14.4 10.1569 14.6211 10.4875 14.7719 10.8515C14.9227 11.2154 15.0004 11.6055 15.0005 11.9995C15.0005 12.3935 14.923 12.7836 14.7723 13.1476C14.6216 13.5116 14.4007 13.8423 14.1221 14.121C13.8436 14.3996 13.5129 14.6206 13.149 14.7714C12.785 14.9223 12.3949 14.9999 12.001 15C11.2053 15 10.4422 14.6839 9.87964 14.1213C9.31703 13.5587 9.00096 12.7956 9.00096 12C9.00096 11.2044 9.31703 10.4413 9.87964 9.87868C10.4422 9.31607 11.2053 9 12.001 9M17.251 5.5C16.9194 5.5 16.6015 5.6317 16.3671 5.86612C16.1327 6.10054 16.001 6.41848 16.001 6.75C16.001 7.08152 16.1327 7.39946 16.3671 7.63388C16.6015 7.8683 16.9194 8 17.251 8C17.5825 8 17.9004 7.8683 18.1348 7.63388C18.3693 7.39946 18.501 7.08152 18.501 6.75C18.501 6.41848 18.3693 6.10054 18.1348 5.86612C17.9004 5.6317 17.5825 5.5 17.251 5.5Z"
-                    fill="white"
-                  />
-                </svg>
-              </Link>
-            </li>
-            <li className="hover:cursor-pointer transition-all  duration-200 hover:scale-110">
-              <Link href="https://www.linkedin.com/in/shivam-kumar-4b334b210/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M20.4701 2.00002H3.53006C3.33964 1.99737 3.15056 2.03227 2.97362 2.1027C2.79669 2.17314 2.63536 2.27774 2.49886 2.41053C2.36235 2.54332 2.25334 2.7017 2.17805 2.87663C2.10276 3.05155 2.06267 3.2396 2.06006 3.43002V20.57C2.06267 20.7604 2.10276 20.9485 2.17805 21.1234C2.25334 21.2983 2.36235 21.4567 2.49886 21.5895C2.63536 21.7223 2.79669 21.8269 2.97362 21.8973C3.15056 21.9678 3.33964 22.0027 3.53006 22H20.4701C20.6605 22.0027 20.8496 21.9678 21.0265 21.8973C21.2034 21.8269 21.3648 21.7223 21.5013 21.5895C21.6378 21.4567 21.7468 21.2983 21.8221 21.1234C21.8974 20.9485 21.9375 20.7604 21.9401 20.57V3.43002C21.9375 3.2396 21.8974 3.05155 21.8221 2.87663C21.7468 2.7017 21.6378 2.54332 21.5013 2.41053C21.3648 2.27774 21.2034 2.17314 21.0265 2.1027C20.8496 2.03227 20.6605 1.99737 20.4701 2.00002ZM8.09006 18.74H5.09006V9.74002H8.09006V18.74ZM6.59006 8.48002C6.17632 8.48002 5.77953 8.31566 5.48697 8.0231C5.19442 7.73055 5.03006 7.33376 5.03006 6.92002C5.03006 6.50628 5.19442 6.10949 5.48697 5.81693C5.77953 5.52437 6.17632 5.36002 6.59006 5.36002C6.80975 5.3351 7.03223 5.35687 7.24293 5.4239C7.45363 5.49093 7.6478 5.60171 7.81272 5.74898C7.97763 5.89625 8.10958 6.0767 8.19993 6.2785C8.29027 6.4803 8.33698 6.69891 8.33698 6.92002C8.33698 7.14112 8.29027 7.35973 8.19993 7.56154C8.10958 7.76334 7.97763 7.94378 7.81272 8.09106C7.6478 8.23833 7.45363 8.34911 7.24293 8.41613C7.03223 8.48316 6.80975 8.50493 6.59006 8.48002ZM18.9101 18.74H15.9101V13.91C15.9101 12.7 15.4801 11.91 14.3901 11.91C14.0527 11.9125 13.7242 12.0183 13.4489 12.2132C13.1735 12.4081 12.9645 12.6827 12.8501 13C12.7718 13.2351 12.7379 13.4826 12.7501 13.73V18.73H9.75006V9.73002H12.7501V11C13.0226 10.5271 13.419 10.1375 13.8965 9.87322C14.374 9.6089 14.9146 9.47987 15.4601 9.50002C17.4601 9.50002 18.9101 10.79 18.9101 13.56V18.74Z"
-                    fill="white"
-                  />
-                </svg>
-              </Link>
-            </li>
-            <li className="hover:cursor-pointer transition-all  duration-200 hover:scale-110">
-              <Link href="https://t.me/xxandyasphaltxx">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8C16.49 10.38 15.84 14.22 15.51 15.99C15.37 16.74 15.09 16.99 14.83 17.02C14.25 17.07 13.81 16.64 13.25 16.27C12.37 15.69 11.87 15.33 11.02 14.77C10.03 14.12 10.67 13.76 11.24 13.18C11.39 13.03 13.95 10.7 14 10.49C14.0069 10.4582 14.006 10.4252 13.9973 10.3938C13.9886 10.3624 13.9724 10.3337 13.95 10.31C13.89 10.26 13.81 10.28 13.74 10.29C13.65 10.31 12.25 11.24 9.52 13.08C9.12 13.35 8.76 13.49 8.44 13.48C8.08 13.47 7.4 13.28 6.89 13.11C6.26 12.91 5.77 12.8 5.81 12.45C5.83 12.27 6.08 12.09 6.55 11.9C9.47 10.63 11.41 9.79 12.38 9.39C15.16 8.23 15.73 8.03 16.11 8.03C16.19 8.03 16.38 8.05 16.5 8.15C16.6 8.23 16.63 8.34 16.64 8.42C16.63 8.48 16.65 8.66 16.64 8.8Z"
-                    fill="white"
-                  />
-                </svg>
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="md:bg-[#161616] md:border-2 border-[#1c1c1c] text-[#7C7C7C] md:p-6 p-1 w-full rounded-lg mt-10">
-          <h2 className="text-xl text-white font-semibold mb-6">
-            Work Experience
-          </h2>
-          <div className="relative ">
-            {jobs.map((job, index) => (
-              <div key={index} className="relative ">
-                {/* Job card */}
-                <div className="bg-[#1B1B1B] border-2 border-[#252525] mb-4  p-4 rounded-lg ">
-                  <div className="flex items-center mb-2 ">
-                    <Image
-                      width={300}
-                      height={300}
-                      src={job.logo}
-                      alt={`${job.company} logo`}
-                      className="w-10 h-10 rounded-full mr-4 object-cover"
-                    />
-                    <div>
-                      <h3 className="text-sm font-semibold md:text-base text-[#7C7C7C]">
-                        {job.role}
-                      </h3>
-                      <p className="text-[0.8rem] md:text-[0.9rem] text-[#434343]">
-                        {job.company}
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-[#434343] ">{job.duration}</p>
-                </div>
-              </div>
-            ))}
+    <section className="relative flex items-center justify-center pt-24 pb-12 px-4">
+      {/* Background Ambience */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-900/10 rounded-full blur-[100px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-900/10 rounded-full blur-[100px]" />
+      </div>
+
+      <div className="max-w-6xl w-full z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        {/* Left Col: Text & Intro */}
+        <div className="lg:col-span-7 flex flex-col gap-8 text-center lg:text-left">
+          <div className="space-y-2">
+            <h2 className="text-sm md:text-md font-medium tracking-[0.2em] text-[#00ff99] uppercase animate-pulse">
+              Hi, I'm
+            </h2>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none text-white">
+              SHIVAM <span className="text-chrome">KUMAR</span>
+            </h1>
+            <div className="h-[1px] w-24 bg-white/20 my-4 mx-auto lg:mx-0"></div>
+            <h3 className="text-xl md:text-2xl font-light tracking-widest text-[#a1a1aa] font-[family-name:var(--font-syncopate)]">
+              UI/UX Architect & Dev
+            </h3>
+          </div>
+
+          <p className="text-lg text-[#71717a] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Crafting high-performance digital interfaces with a focus on motion,
+            aesthetics, and user-centric architecture. Currently building at{" "}
+            <span className="text-white">Branding Pioneers</span>.
+          </p>
+
+          {/* Tech Stack Mini-Grid */}
+          <div className="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 opacity-80">
+            {/* Tech Item */}
+            <div className="border border-white/10 rounded p-2 text-center text-xs tracking-wider text-gray-400 hover:border-purple-500/50 transition-colors">
+              NEXT.JS
+            </div>
+            <div className="border border-white/10 rounded p-2 text-center text-xs tracking-wider text-gray-400 hover:border-blue-500/50 transition-colors">
+              REACT
+            </div>
+            <div className="border border-white/10 rounded p-2 text-center text-xs tracking-wider text-gray-400 hover:border-green-500/50 transition-colors">
+              TAILWIND
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-6 mt-4 justify-center lg:justify-start">
+            <a
+              href="#works"
+              className="group relative px-8 py-3 bg-white text-black font-bold text-sm tracking-widest uppercase hover:bg-gray-200 transition-all"
+            >
+              View Protocol
+              <div className="absolute inset-0 border border-white group-hover:scale-105 transition-transform duration-300"></div>
+            </a>
+            <a
+              href="#contact"
+              className="group relative px-8 py-3 bg-transparent text-white border border-white/20 font-bold text-sm tracking-widest uppercase hover:bg-white/5 transition-all"
+            >
+              Initialize Comms
+            </a>
           </div>
         </div>
+
+        {/* Right Col: Visual / Image / Data Panel */}
+        <div className="lg:col-span-5 relative">
+          {/* LED Wrapper for the Image Card */}
+          <div className="led-wrapper p-[1px] rounded-2xl transform  transition-transform duration-500">
+            <div className="led-content p-2 rounded-2xl bg-[#080808]">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl grayscale hover:grayscale-0 transition-all duration-700">
+                <Image
+                  src="https://i.pinimg.com/originals/50/62/47/506247ebcde7a1fcdb001109163115f3.jpg"
+                  alt="Shivam Profile"
+                  fill
+                  className="object-cover"
+                />
+                {/* Overlay UI Elements */}
+                <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md p-4 border border-white/10 rounded">
+                  <div className="flex justify-between items-center text-xs text-gray-400 font-mono">
+                    <span>STATUS</span>
+                    <span className="text-green-400">● ACTIVE</span>
+                  </div>
+                  <div className="w-full h-[1px] bg-white/10 my-2"></div>
+                  <div className="flex justify-between items-center text-xs text-gray-400 font-mono">
+                    <span>LOC</span>
+                    <span>INDIA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Decorative Elements behind */}
+          <div className="absolute -z-10 top-10 -right-10 w-full h-full border border-white/5 rounded-2xl hidden lg:block"></div>
+        </div>
       </div>
-    </>
+
+      {/* Scroll Indicator */}
+      {/* <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce">
+        <span className="text-[10px] tracking-[0.3em] uppercase">Scroll</span>
+        <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
+      </div> */}
+    </section>
   );
 };
 

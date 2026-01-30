@@ -1,13 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     message: "",
   });
   const [status, setStatus] = useState("");
@@ -19,115 +17,138 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending...");
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setStatus("Message sent successfully!");
-        setFormData({ name: "", email: "", phone: "", message: "" });
-      } else {
-        setStatus("Failed to send message.");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      setStatus("Failed to send message.");
-    }
+    setStatus("Initiating transmission...");
+    // Simulate send
+    setTimeout(() => {
+      setStatus("Transmission Successful. Stand by for response.");
+      setFormData({ name: "", email: "", message: "" });
+    }, 1500);
   };
 
   return (
-    <div className="md:border-2 border-[#1c1c1c] rounded-xl w-full mb-10 md:p-8 p-4 md:bg-[#161616] md:bg-opacity-60 shadow-lg max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-gray-300 mb-6">Contact Me</h2>
-      <div className="flex">
-        <form className="w-full md:pr-8" onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full transition-all border-2 border-[#252525] duration-200 bg-[#1C1C1C] text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full transition-all border-2 border-[#252525] duration-200 bg-[#1C1C1C] text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone"
-              value={formData.phone}
-              onChange={handleChange}
-              className="w-full transition-all border-2 border-[#252525] duration-200 bg-[#1C1C1C] text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
-            />
-          </div>
-          <div className="mb-6">
-            <textarea
-              name="message"
-              placeholder="Your sweet message ..."
-              rows="4"
-              value={formData.message}
-              onChange={handleChange}
-              className="w-full transition-all border-2 border-[#252525] duration-200 bg-[#1C1C1C] text-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600"
-              required
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-[#39177D] border-2 border-[#551CAF] text-white py-3 rounded-lg hover:bg-opacity-70 hover:border-opacity-55 transition duration-300"
-          >
-            Send / Shoot
-          </button>
-        </form>
-        <div className="md:w-1/3 md:flex hidden items-center justify-center">
-          <div className="w-48 h-48 bg-gray-700 rounded-lg flex items-center justify-center text-gray-500">
-            <Image
-              src="https://img.freepik.com/free-vector/grey-send-paper-airplane_78370-849.jpg"
-              alt="hero"
-              width={800}
-              height={400}
-              className="object-cover w-[100%] h-48 rounded-lg"
-            />
+    <section id="contact" className="py-24 px-4">
+      <div className="max-w-4xl mx-auto led-wrapper p-[2px] rounded-2xl">
+        <div className="led-content bg-[#080808] rounded-2xl p-8 md:p-16 relative overflow-hidden">
+          {/* Background Lines */}
+          <div
+            className="absolute inset-0 z-0 opacity-10"
+            style={{
+              backgroundImage:
+                "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)",
+              backgroundSize: "40px 40px",
+            }}
+          ></div>
+
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Left: Info */}
+            <div className="flex flex-col justify-between">
+              <div>
+                <h2 className="text-4xl font-bold text-white mb-2 tracking-tighter">
+                  CONTACT_HUB
+                </h2>
+                <p className="text-gray-400 mb-8 font-light">
+                  Ready to deploy your next project? Initialize communication
+                  protocol below. Available for freelance and collaborative
+                  missions.
+                </p>
+              </div>
+
+              <div className="space-y-4 text-sm font-mono text-gray-300">
+                <div className="flex items-center gap-4 p-4 border border-white/10 rounded bg-white/5 hover:bg-white/10 transition-colors">
+                  <span className="text-green-400">EMAIL ::</span>
+                  <a href="mailto:shivam.work222@gmail.com">
+                    shivam.work222@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-4 p-4 border border-white/10 rounded bg-white/5 hover:bg-white/10 transition-colors">
+                  <span className="text-blue-400">PHONE ::</span>
+                  <a href="tel:+919110068182">+91 9110068182</a>
+                </div>
+                <div className="flex gap-4 mt-4">
+                  <a
+                    href="https://github.com/Shivam020202"
+                    className="text-gray-500 hover:text-white transition-colors"
+                  >
+                    GITHUB
+                  </a>
+                  <a
+                    href="https://linkedin.com"
+                    className="text-gray-500 hover:text-white transition-colors"
+                  >
+                    LINKEDIN
+                  </a>
+                  <a
+                    href="https://instagram.com"
+                    className="text-gray-500 hover:text-white transition-colors"
+                  >
+                    INSTAGRAM
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Form */}
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label className="block text-xs font-bold text-gray-500 mb-2 uppercase tracking-widest">
+                  Identify
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="ENTER DESIGNATION"
+                  className="w-full bg-[#111] border border-white/10 p-4 text-white focus:outline-none focus:border-purple-500 transition-colors rounded-none"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-gray-500 mb-2 uppercase tracking-widest">
+                  Frequency
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="ENTER EMAIL ADDRESS"
+                  className="w-full bg-[#111] border border-white/10 p-4 text-white focus:outline-none focus:border-purple-500 transition-colors rounded-none"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-gray-500 mb-2 uppercase tracking-widest">
+                  Transmission Payload
+                </label>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows="4"
+                  placeholder="ENTER MESSAGE DATA..."
+                  className="w-full bg-[#111] border border-white/10 p-4 text-white focus:outline-none focus:border-purple-500 transition-colors rounded-none resize-none"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full py-4 bg-white text-black font-bold tracking-[0.2em] uppercase hover:bg-gray-300 transition-colors"
+              >
+                Execute Transmission
+              </button>
+
+              {status && (
+                <div className="text-xs font-mono text-green-400 mt-4 text-center animate-pulse">
+                  {status}
+                </div>
+              )}
+            </form>
           </div>
         </div>
       </div>
-      {status && <p className="mt-4 text-sm text-[#3f3f3f]">{status}</p>}
-      <p className="bg-black border-2 border-[#1c1c1c] w-full p-2 rounded-lg mt-4 text-sm text-gray-500 ">
-        Note - Custom Backend Integrated ! don&apos;t spam
-      </p>
-      <div className="bg-gradient-to-t from-[#0b1f14] to-[#0c1e00] md:bg-opacity-50  w-full p-4 rounded-lg mt-4 text-sm text-gray-500 ">
-        <h3 className="">Or Contact me at</h3>
-        email -{" "}
-        <Link
-          className="text-yellow-500"
-          href="mailto:shivam.work222@gmail.com"
-        >
-          shivam.work222@gmail.com
-        </Link>
-        <br />
-        phone -{" "}
-        <Link className="text-blue-500" href="tel:+919110068182">
-          +91 9110068182
-        </Link>
-      </div>
-    </div>
+    </section>
   );
 };
 

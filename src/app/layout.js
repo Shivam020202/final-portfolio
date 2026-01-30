@@ -1,28 +1,35 @@
-// app/layout.js or pages/_app.js, depending on your Next.js version
-import { Space_Mono } from "next/font/google";
+import { Syncopate, Rajdhani } from "next/font/google"; // Sleek, futuristic fonts
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 
-const spaceMono = Space_Mono({
+// For that wide, premium metallic header look (Thin/Regular weights)
+const syncopate = Syncopate({
   subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-space-mono",
+  variable: "--font-syncopate",
+});
+
+// For tech-inspired, readable body text
+const rajdhani = Rajdhani({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-rajdhani",
 });
 
 export const metadata = {
-  title: "Shivam Kumar",
-  description: "It is a personal portfolio website",
+  title: "SHIVAM KUMAR | Portfolio",
+  description: "Premium Digital Experiences & UI/UX Design",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={spaceMono.variable}>
-      <body className="font-space-mono items-center antialiased flex flex-col min-h-screen">
+    <html lang="en" className={`${syncopate.variable} ${rajdhani.variable}`}>
+      <body className="antialiased bg-[#050505] text-gray-300 selection:bg-purple-500/30 selection:text-purple-200">
         <Analytics />
         <Navbar />
-        <main className="flex-grow w-full mx-auto flex flex-col items-center">
+        <main className="flex-grow w-full mx-auto flex flex-col items-center overflow-x-hidden">
           {children}
         </main>
         <Footer />

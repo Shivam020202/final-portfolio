@@ -1,13 +1,23 @@
+"use client";
 import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" w-full flex-col  bg-gradient-to-t from-[#0b1f14] to-[#161616] md:bg-opacity-50 mt-5  max-w-2xl flex  md:rounded-tl-lg md:rounded-tr-lg md:p-4 p-2">
-      {/* <h1 className="font-bold mb-5">Shivam Kumar</h1> */}
-      <p className=" px-auto justify-center flex  w-full p-2 rounded-lg md:mt-4 mt-2 text-sm text-gray-500">
-        Copyright worthy ? 2024 | Shivam
-      </p>
-    </div>
+    <footer className="w-full bg-black border-t border-white/5 py-8">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="text-chrome font-bold tracking-widest text-lg">SK</div>
+
+        <p className="text-xs text-gray-600 font-mono tracking-wider">
+          © {new Date().getFullYear()} SHIVAM KUMAR. ALL SYSTEMS OPERATIONAL.
+        </p>
+
+        <div className="flex gap-4">
+          <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+          <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse delay-75"></div>
+          <div className="w-2 h-2 rounded-full bg-purple-500 animate-pulse delay-150"></div>
+        </div>
+      </div>
+    </footer>
   );
 };
 

@@ -2,50 +2,153 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Dark mode styles */
 :root {
-  --background: #000000; /* Dark background */
-  --foreground: #ededed; /* Light text color for contrast */
-  --font-space-mono: "Space Mono", monospace;
-}
-
-.font-space-mono {
-  font-family: var(--font-space-mono);
+  --bg-dark: #050505;
+  --bg-panel: #0a0a0a;
+  --primary-glow: rgba(120, 119, 198, 0.3);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-dark);
+  color: #e4e4e7; /* Zinc-200 */
+  font-family: var(--font-rajdhani), sans-serif;
 }
 
-.gradient-text {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-syncopate), sans-serif;
+  letter-spacing: 0.1em; /* Wide spacing for sleek look */
+}
+
+/* --- Utilities --- */
+
+.glass-panel {
+  background: rgba(15, 15, 15, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --- Metallic Text (Sleek Chrome) --- */
+.text-chrome {
   background: linear-gradient(
-    120deg,
-    #8a2be2 20%,
-    #00ff6a 40%,
-    #00c6ff 60%,
-    #ff4ecd 80%
+    to bottom,
+    #ffffff 0%,
+    #e0e0e0 40%,
+    #a0a0a0 50%,
+    #d0d0d0 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-  background-size: 500% auto;
-  animation: textShine 5s ease-in-out infinite alternate;
+  color: transparent;
+  /* subtle shadow to lift it off the black */
+  text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.15);
 }
 
-@keyframes textShine {
+/* --- LED Strip Border Animation --- */
+/* Usage: Wrap content in .led-wrapper, then .led-content inside. 
+   The wrapper provides the animated gradient border. */
+.led-wrapper {
+  position: relative;
+  background: #101010; /* Fallback */
+  padding: 1px; /* The border width - KEEP IT THIN (1px) */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.led-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -150%;
+  left: -150%;
+  width: 400%;
+  height: 400%;
+  background: conic-gradient(
+    transparent 80%,
+    #00ff99,
+    /* Gamer Green */ #00ccff,
+    /* Gamer Blue */ #cc00ff,
+    /* Gamer Purple */ transparent 95%
+  );
+  animation: rotate-border 6s linear infinite;
+}
+
+/* If you want a more subtle "flowing beam" instead of full spin */
+.led-beam-border {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  padding: 1px; /* Border width */
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #8b5cf6,
+    #06b6d4,
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: beam-flow 3s linear infinite;
+}
+
+@keyframes rotate-border {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes beam-flow {
   0% {
-    background-position: 0% 50%;
+    background-position: 100% 0;
   }
   100% {
-    background-position: 100% 50%;
+    background-position: -100% 0;
   }
+}
+
+/* --- Inner content to cover the spinning background --- */
+.led-content {
+  position: relative;
+  background: var(--bg-panel);
+  height: 100%;
+  width: 100%;
+  border-radius: inherit; /* matches wrapper */
+}
+
+/* --- Hover Glow --- */
+.hover-glow {
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.15); /* Purple hint */
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
