@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="lg:col-span-7 flex flex-col gap-8 text-center lg:text-left">
           <div className="space-y-2">
             <h2 className="text-sm md:text-md font-medium tracking-[0.2em] text-[#00ff99] uppercase animate-pulse">
-              Hi, I'm
+              Hi, I&apos;m
             </h2>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none text-white">
               SHIVAM <span className="text-chrome">KUMAR</span>

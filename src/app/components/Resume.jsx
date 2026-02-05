@@ -57,7 +57,7 @@ const Resume = () => {
               <ul className="space-y-3 text-sm text-gray-400 font-light">
                 <li className="flex items-center gap-3">
                   <div className="w-1 h-1 bg-purple-500 rounded-full"></div>
-                  Bachelor's in Computer Science (2019-2023)
+                  Bachelor&apos;s in Computer Science (2019-2023)
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-1 h-1 bg-blue-500 rounded-full"></div>

@@ -23,11 +23,11 @@ const Note = () => {
 
         <div className="space-y-4">
           <p className="text-xs font-mono text-gray-500 tracking-widest">
-            // SYSTEM_NOTE
+            {"// SYSTEM_NOTE"}
           </p>
           <p className="text-gray-400 font-light text-sm italic max-w-lg mx-auto">
-            "This architecture is living. It evolves with every commit. Built on
-            the Next.js framework. Styled with Tailwind."
+            &quot;This architecture is living. It evolves with every commit.
+            Built on the Next.js framework. Styled with Tailwind.&quot;
           </p>
         </div>
 
